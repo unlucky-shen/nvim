@@ -1,6 +1,6 @@
 # nvim
 
-* Currently rewriting the the config, however, general settings will remain the same everytime
+* Currently rewriting the the config. However, general settings will remain the same everytime
 ```lua
 -- settings
 vim.g.mapleader = " "
