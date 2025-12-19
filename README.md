@@ -28,7 +28,6 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.swapfile = false
 vim.opt.inccommand = 'split'
-vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 vim.opt.winborder = "solid"
 vim.opt.breakindent = true
