@@ -31,7 +31,9 @@ vim.opt.scrolloff = 10
 vim.opt.breakindent = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
-vim.opt.winborder = 'rounded'
+vim.opt.winborder = 'double'
+
+vim.diagnostic.config({ virtual_text = true })
 
 -- Keymaps
 vim.keymap.set('n', '<leader>w', ':write<CR>')
@@ -42,11 +44,11 @@ vim.keymap.set({ 'n', 'v', 'x' }, '<leader>d', '"+d<CR>')
 
 -- Add Plugins
 vim.pack.add({
-	{src = 'https://github.com/vague-theme/vague.nvim' },
-	{src = 'https://github.com/nvim-lualine/lualine.nvim'},
-	{src = 'https://github.com/nvim-mini/mini.pick' },
-	{src = 'https://github.com/stevearc/oil.nvim' },
-	{src = 'https://github.com/windwp/nvim-autopairs' },
+	{ src = 'https://github.com/vague-theme/vague.nvim' },
+	{ src = 'https://github.com/nvim-lualine/lualine.nvim' },
+	{ src = 'https://github.com/nvim-mini/mini.pick' },
+	{ src = 'https://github.com/stevearc/oil.nvim' },
+	{ src = 'https://github.com/windwp/nvim-autopairs' },
 })
 
 -- ################
@@ -55,9 +57,7 @@ vim.pack.add({
 
 -- Colorscheme
 require 'vague'.setup()
--- require 'vague'.setup({ transparent = true }) -- to enable transparency
 vim.cmd('colorscheme vague')
-vim.cmd(":hi statusline guibg=NONE")
 
 -- Lualine
 require 'lualine'.setup()
@@ -74,7 +74,13 @@ vim.keymap.set('n', '<leader>e', ':Oil<CR>')
 --  Autopairs
 require 'nvim-autopairs'.setup()
 
--- Lsp
-vim.lsp.enable({ 'rust_analyzer' })
+-- ###########
+-- ### Lsp ###
+-- ###########
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 
+vim.lsp.enable({
+	'lua_ls',
+	'rust_analyzer',
+	'pyright'
+})
