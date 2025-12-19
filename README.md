@@ -1,5 +1,6 @@
 # nvim
 
+* Most cursed nvim config you'll ever see
 * Currently rewriting the the config. However, general settings will remain the same everytime
 ```lua
 -- Global Variables
