@@ -16,7 +16,7 @@ vim.opt.timeoutlen = 300
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.list = false
-vim.opt.listchars = { tab = ' ', trail = '·', nbsp = '␣' }
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 vim.opt.fillchars = { eob = ' ' }
 vim.opt.mouse = 'a'
 vim.opt.cursorline = true
