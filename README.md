@@ -1,7 +1,13 @@
 # nvim
 
 * Most cursed nvim config you'll ever see
-* Currently rewriting the the config. However, general settings will remain the same everytime
+* Minimal plugins installed
+* LSP servers will need to be updated manually by following the below steps,
+  1. At the nvim-lsp-config github repo, navigate to `/nvim-lspconfig/lsp` and look for required lsp
+  2. Copy and paste the required lsp file contents into nvim config folder under `~/.config/nvim/lsp`
+  3. enable the lsp from `init.lua`. (eg.`vim.lsp.enable({ 'pyright' })`)
+  4. Good luck.
+
 ```lua
 -- Global Variables
 vim.g.mapleader = " "
