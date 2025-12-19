@@ -29,7 +29,6 @@ vim.opt.shiftwidth = 2
 vim.opt.swapfile = false
 vim.opt.inccommand = 'split'
 vim.opt.scrolloff = 10
-vim.opt.winborder = "solid"
 vim.opt.breakindent = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
