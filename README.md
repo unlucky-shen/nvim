@@ -1,13 +1,14 @@
 # nvim
 
-* Most cursed nvim config you'll ever see
+* Cursed config
 * Minimal plugins installed
-* LSP servers will need to be updated manually by following the below steps,
-  1. At the nvim-lsp-config github repo, navigate to `/nvim-lspconfig/lsp` and look for required lsp
-  2. Copy and paste the required lsp file contents into nvim config folder under `~/.config/nvim/lsp`
-  3. enable the lsp from `init.lua`. (eg.`vim.lsp.enable({ 'pyright' })`)
-  4. Good luck.
+* LSPs must be updated manually by following these steps,
+  1. At the nvim-lsp-config Github repository, navigate to `/nvim-lspconfig/` and look for required lsp. (eg. `pyright.lua`)
+  2. Copy and paste the contents of required lsp file contents into neovim config folder under `~/.config/nvim/lsp/`
+  3. Enable the lsp from `init.lua`. (eg.`vim.lsp.enable({ 'pyright' })`)
+  4. Have fun.
 
+### Personal Settings (For clean look)
 ```lua
 -- Global Variables
 vim.g.mapleader = " "
@@ -46,4 +47,4 @@ vim.keymap.set('n', '<leader>q', ':quit<CR>')
 vim.keymap.set('n', '<leader>o', ':update<CR> :source<CR>')
 vim.keymap.set({ 'n', 'v', 'x' }, '<leader>y', '"+y<CR>')
 vim.keymap.set({ 'n', 'v', 'x' }, '<leader>d', '"+d<CR>')
-``` 
+```
