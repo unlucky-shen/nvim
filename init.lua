@@ -33,7 +33,7 @@ vim.opt.scrolloff = 10
 vim.opt.breakindent = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
-vim.opt.winborder = 'double'
+vim.opt.winborder = 'rounded'
 
 vim.diagnostic.config({ virtual_text = true })
 
