@@ -56,7 +56,7 @@ vim.pack.add({
 -- ################
 
 -- Colorscheme
-require 'vague'.setup()
+require 'vague'.setup({ transparent = true })
 vim.cmd('colorscheme vague')
 
 -- Lualine
