@@ -2,6 +2,8 @@
 -- ### Settings ###
 -- ################
 
+local vim = vim
+
 -- Global Variables
 vim.g.mapleader = " "
 vim.g.localleader = " "
@@ -45,9 +47,9 @@ vim.keymap.set({ 'n', 'v', 'x' }, '<leader>d', '"+d<CR>')
 -- Add Plugins
 vim.pack.add({
 	{ src = 'https://github.com/vague-theme/vague.nvim' },
+	{ src = 'https://github.com/nvim-tree/nvim-web-devicons' },
 	{ src = 'https://github.com/nvim-lualine/lualine.nvim' },
 	{ src = 'https://github.com/nvim-mini/mini.pick' },
-	{ src = 'https://github.com/stevearc/oil.nvim' },
 	{ src = 'https://github.com/windwp/nvim-autopairs' },
 	{ src = 'https://github.com/nvim-treesitter/nvim-treesitter' },
 })
@@ -67,10 +69,6 @@ require 'lualine'.setup()
 require 'mini.pick'.setup()
 vim.keymap.set('n', '<leader><leader>', ':Pick files<CR>')
 vim.keymap.set('n', '<leader>h', ':Pick help<CR>')
-
--- Oil.nvim
-require 'oil'.setup()
-vim.keymap.set('n', '<leader>e', ':Oil<CR>')
 
 --  Autopairs
 require 'nvim-autopairs'.setup()
