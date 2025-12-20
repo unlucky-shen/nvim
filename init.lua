@@ -49,6 +49,7 @@ vim.pack.add({
 	{ src = 'https://github.com/nvim-mini/mini.pick' },
 	{ src = 'https://github.com/stevearc/oil.nvim' },
 	{ src = 'https://github.com/windwp/nvim-autopairs' },
+	{ src = 'https://github.com/nvim-treesitter/nvim-treesitter' },
 })
 
 -- ################
@@ -73,6 +74,15 @@ vim.keymap.set('n', '<leader>e', ':Oil<CR>')
 
 --  Autopairs
 require 'nvim-autopairs'.setup()
+
+-- Tree-sitter
+require 'nvim-treesitter'.install({
+	"r",
+	"python",
+	"lua",
+	"rust",
+	"typst",
+})
 
 -- ###########
 -- ### Lsp ###

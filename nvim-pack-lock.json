@@ -12,6 +12,10 @@
       "rev": "c2a0dd0d931d0fb07665e1fedb1ea688da3b80b4",
       "src": "https://github.com/windwp/nvim-autopairs"
     },
+    "nvim-treesitter": {
+      "rev": "e08ad49dbd62d68789930ca87068da89e71cb71a",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter"
+    },
     "oil.nvim": {
       "rev": "cbcb3f997f6f261c577b943ec94e4ef55108dd95",
       "src": "https://github.com/stevearc/oil.nvim"
