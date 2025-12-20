@@ -41,7 +41,9 @@ vim.opt.scrolloff = 10
 vim.opt.breakindent = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
-vim.opt.winborder = 'rounded'
+vim.opt.winborder = 'double'
+
+vim.diagnostic.config({ virtual_text = true })
 
 -- Keymaps
 vim.keymap.set('n', '<leader>w', ':write<CR>')
