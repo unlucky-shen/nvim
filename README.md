@@ -10,7 +10,7 @@
   5. To trigger LSP autocomplete use `Ctrl + x + o`
   6. Have fun.
 
-### Personal Settings (For clean look)
+### Configs may change, But these settings will always remain the same
 ```lua
 -- Global Variables
 vim.g.mapleader = " "
