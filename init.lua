@@ -1,7 +1,3 @@
--- ################
--- ### Settings ###
--- ################
-
 local vim = vim
 
 -- Global Variables
@@ -53,10 +49,6 @@ vim.pack.add({
 	{ src = 'https://github.com/windwp/nvim-autopairs' },
 	{ src = 'https://github.com/nvim-treesitter/nvim-treesitter' },
 })
-
--- ################
--- ### Configs ####
--- ################
 
 -- Colorscheme
 require 'vague'.setup()
