@@ -74,9 +74,7 @@ require 'nvim-treesitter'.install({
 	"typst",
 })
 
--- ###########
--- ### Lsp ###
--- ###########
+-- Lsp
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 
 vim.lsp.enable({
