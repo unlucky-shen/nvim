@@ -76,7 +76,6 @@ require 'nvim-treesitter'.install({
 
 -- Lsp
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
-
 vim.lsp.enable({
 	'lua_ls',
 	'rust_analyzer',
