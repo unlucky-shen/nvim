@@ -43,7 +43,7 @@ vim.keymap.set({ 'n', 'v', 'x' }, '<leader>d', '"+d<CR>')
 
 -- Add Plugins
 vim.pack.add({
-	{ src = 'https://github.com/vague-theme/vague.nvim' },
+	{ src = 'https://github.com/sainnhe/gruvbox-material' },
 	{ src = 'https://github.com/nvim-tree/nvim-web-devicons' },
 	{ src = 'https://github.com/nvim-lualine/lualine.nvim' },
 	{ src = 'https://github.com/nvim-mini/mini.pick' },
@@ -52,8 +52,10 @@ vim.pack.add({
 })
 
 -- Colorscheme
-require 'vague'.setup()
-vim.cmd('colorscheme vague')
+vim.opt.background = 'dark'
+vim.g.gruvbox_material_background = 'hard'
+vim.g.gruvbox_material_foreground = 'material'
+vim.cmd('colorscheme gruvbox-material')
 
 -- Lualine
 require 'lualine'.setup()
