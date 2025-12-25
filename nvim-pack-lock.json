@@ -9,7 +9,7 @@
       "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
     "mini.pick": {
-      "rev": "6b7974543b17cf2e294993fc3d8545a342258232",
+      "rev": "0c56dc3ef9b15e9659ce09331fdc82449349701b",
       "src": "https://github.com/nvim-mini/mini.pick"
     },
     "nvim-autopairs": {
@@ -17,16 +17,12 @@
       "src": "https://github.com/windwp/nvim-autopairs"
     },
     "nvim-treesitter": {
-      "rev": "e08ad49dbd62d68789930ca87068da89e71cb71a",
+      "rev": "6e42d823ce0a5a76180c473c119c7677738a09d1",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-web-devicons": {
-      "rev": "8dcb311b0c92d460fac00eac706abd43d94d68af",
+      "rev": "6788013bb9cb784e606ada44206b0e755e4323d7",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
-    },
-    "vague.nvim": {
-      "rev": "fcc283576764474ccfbbcca240797d5d7f4d8a78",
-      "src": "https://github.com/vague-theme/vague.nvim"
     }
   }
 }
