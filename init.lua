@@ -45,6 +45,7 @@ vim.pack.add({
 	{ src = 'https://github.com/nvim-lualine/lualine.nvim' },
 	{ src = 'https://github.com/nvim-mini/mini.pick' },
 	{ src = 'https://github.com/windwp/nvim-autopairs' },
+	{ src = 'https://github.com/lukas-reineke/indent-blankline.nvim' },
 	{ src = 'https://github.com/nvim-treesitter/nvim-treesitter' },
 })
 
@@ -64,6 +65,9 @@ vim.keymap.set('n', '<leader>h', ':Pick help<CR>')
 
 --  Autopairs
 require 'nvim-autopairs'.setup()
+
+-- Indent-Blankline
+require 'ibl'.setup()
 
 -- Tree-sitter
 require 'nvim-treesitter'.install({
