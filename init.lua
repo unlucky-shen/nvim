@@ -17,7 +17,6 @@ vim.opt.list = false
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 vim.opt.fillchars = { eob = ' ' }
 vim.opt.mouse = 'a'
-vim.opt.cursorline = true
 vim.opt.termguicolors = true
 vim.opt.showmode = false
 vim.opt.clipboard = 'unnamedplus'
