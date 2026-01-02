@@ -13,7 +13,7 @@
       "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
     "mini.pick": {
-      "rev": "0c56dc3ef9b15e9659ce09331fdc82449349701b",
+      "rev": "8cb40ee55dd156957b1116eded6135e6aeaa078b",
       "src": "https://github.com/nvim-mini/mini.pick"
     },
     "nvim-autopairs": {
@@ -21,7 +21,7 @@
       "src": "https://github.com/windwp/nvim-autopairs"
     },
     "nvim-treesitter": {
-      "rev": "6e42d823ce0a5a76180c473c119c7677738a09d1",
+      "rev": "1927c76aec829d40dcad24b6469cb639f1334096",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-web-devicons": {

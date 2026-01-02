@@ -66,8 +66,9 @@ vim.keymap.set('n', '<leader><leader>', ':Pick files<CR>')
 vim.keymap.set('n', '<leader>h', ':Pick help<CR>')
 
 -- Toggleterm
-require("toggleterm").setup({
+require 'toggleterm'.setup({
 	open_mapping = [[<leader>t]],
+	shell = 'powershell',
 	direction = 'float',
 	float_opts = {
 		border = 'curved',
