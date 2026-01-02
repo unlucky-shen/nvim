@@ -34,8 +34,8 @@ vim.opt.winborder = 'rounded'
 vim.diagnostic.config({ virtual_text = true })
 
 -- Keymaps
-vim.keymap.set('n', '<leader>w', ':write<CR>')
-vim.keymap.set('n', '<leader>q', ':quit<CR>')
+vim.keymap.set('n', '<leader>w', ':w<CR>')
+vim.keymap.set('n', '<leader>q', ':qa<CR>')
 vim.keymap.set('n', '<leader>o', ':update<CR> :source<CR>')
 
 -- Add Plugins
@@ -62,12 +62,12 @@ require 'lualine'.setup()
 
 -- Mini.pick
 require 'mini.pick'.setup()
-vim.keymap.set('n', '<leader><leader>', ':Pick files<CR>')
+vim.keymap.set('n', '<leader>f', ':Pick files<CR>')
 vim.keymap.set('n', '<leader>h', ':Pick help<CR>')
 
 -- Toggleterm
 require 'toggleterm'.setup({
-	open_mapping = [[<leader>t]],
+	open_mapping = [[<leader><leader>]],
 	shell = 'powershell',
 	direction = 'float',
 	float_opts = {
