@@ -44,6 +44,7 @@ vim.pack.add({
 	{ src = 'https://github.com/nvim-tree/nvim-web-devicons' },
 	{ src = 'https://github.com/nvim-lualine/lualine.nvim' },
 	{ src = 'https://github.com/nvim-mini/mini.pick' },
+	{ src = 'https://github.com/akinsho/toggleterm.nvim' },
 	{ src = 'https://github.com/windwp/nvim-autopairs' },
 	{ src = 'https://github.com/lukas-reineke/indent-blankline.nvim' },
 	{ src = 'https://github.com/nvim-treesitter/nvim-treesitter' },
@@ -63,6 +64,26 @@ require 'lualine'.setup()
 require 'mini.pick'.setup()
 vim.keymap.set('n', '<leader><leader>', ':Pick files<CR>')
 vim.keymap.set('n', '<leader>h', ':Pick help<CR>')
+
+-- Toggleterm
+require("toggleterm").setup({
+	open_mapping = [[<leader>t]],
+	direction = 'float',
+	float_opts = {
+		border = 'curved',
+		width = function()
+			return math.ceil(vim.o.columns * 0.8)
+		end,
+		height = function()
+			return math.ceil(vim.o.lines * 0.8)
+		end,
+		winblend = 3,
+		highlights = {
+			border = "Normal",
+			background = "Normal",
+		}
+	},
+})
 
 --  Autopairs
 require 'nvim-autopairs'.setup()
