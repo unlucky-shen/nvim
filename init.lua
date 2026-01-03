@@ -79,7 +79,7 @@ require 'toggleterm'.setup({
 		height = function()
 			return math.ceil(vim.o.lines * 0.8)
 		end,
-		winblend = 3,
+		winblend = 0,
 		highlights = {
 			border = "Normal",
 			background = "Normal",
