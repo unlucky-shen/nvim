@@ -69,7 +69,7 @@ vim.keymap.set('n', '<leader>h', ':Pick help<CR>')
 require 'toggleterm'.setup({
 	insert_mappings = false,
 	open_mapping = [[<leader><leader>]],
-	-- shell = 'powershell',
+	-- shell = 'powershell', -- uncomment this line in windows
 	direction = 'float',
 	float_opts = {
 		border = 'curved',
@@ -99,7 +99,8 @@ require 'nvim-treesitter'.install({
 	"python",
 	"lua",
 	"rust",
-	"typst",
+	"c",
+	"cpp",
 })
 
 -- Lsp
@@ -108,6 +109,6 @@ vim.lsp.enable({
 	'lua_ls',
 	'rust_analyzer',
 	'pyright',
+	'clangd',
 	'r_language_server',
-	'tinymist',
 })
