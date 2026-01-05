@@ -1,6 +1,6 @@
 # nvim
 
-* Cursed config
+* Cursed "all-in-one" style
 * Minimal plugins installed
 * LSPs must be updated manually by following these steps,
   1. Make sure executable for LSPs are installed.
