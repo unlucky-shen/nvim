@@ -68,6 +68,8 @@ vim.keymap.set('n', '<leader>h', ':Pick help<CR>')
 -- Toggleterm
 require 'toggleterm'.setup({
 	insert_mappings = false,
+	terminal_mappings = true,
+	persist_mode = true,
 	open_mapping = [[<leader><leader>]],
 	-- shell = 'powershell', -- uncomment this line in windows
 	direction = 'float',
