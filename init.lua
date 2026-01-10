@@ -64,12 +64,13 @@ require 'lualine'.setup()
 require 'mini.pick'.setup()
 vim.keymap.set('n', '<leader>f', ':Pick files<CR>')
 vim.keymap.set('n', '<leader>h', ':Pick help<CR>')
+vim.keymap.set('n', '<leader>g', ':Pick grep_live<CR>')
 
 -- Toggleterm
 require 'toggleterm'.setup({
 	insert_mappings = false,
 	open_mapping = [[<leader><leader>]],
-	-- shell = 'powershell', -- uncomment this line in windows
+	shell = 'powershell', -- uncomment this line in windows
 	direction = 'float',
 	float_opts = {
 		border = 'curved',
@@ -94,13 +95,16 @@ require 'nvim-autopairs'.setup()
 require 'ibl'.setup()
 
 -- Tree-sitter
-require 'nvim-treesitter'.install({
-	"r",
-	"python",
-	"lua",
-	"rust",
-	"c",
-	"cpp",
+require 'nvim-treesitter.config'.setup({
+	ensure_installed = {
+		'r',
+		'python',
+		'lua',
+		'rust',
+		'c',
+		'cpp',
+	},
+	highlight = { enable = true },
 })
 
 -- Lsp
