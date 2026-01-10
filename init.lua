@@ -69,6 +69,8 @@ vim.keymap.set('n', '<leader>g', ':Pick grep_live<CR>')
 -- Toggleterm
 require 'toggleterm'.setup({
 	insert_mappings = false,
+	terminal_mappings = true,
+	persist_mode = true,
 	open_mapping = [[<leader><leader>]],
 	shell = 'powershell', -- uncomment this line in windows
 	direction = 'float',
