@@ -8,7 +8,7 @@ vim.g.localleader = " "
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.cmdheight = 0
-vim.opt.signcolumn = 'yes:2'
+vim.opt.signcolumn = 'yes:1'
 vim.opt.updatetime = 250
 vim.opt.timeoutlen = 300
 vim.opt.splitright = true
@@ -72,7 +72,7 @@ require 'toggleterm'.setup({
 	terminal_mappings = true,
 	persist_mode = true,
 	open_mapping = [[<leader><leader>]],
-	shell = 'powershell', -- uncomment this line in windows
+	shell = 'powershell', -- remove this line in linux
 	direction = 'float',
 	float_opts = {
 		border = 'curved',
