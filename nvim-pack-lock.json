@@ -12,6 +12,10 @@
       "rev": "47f91c416daef12db467145e16bed5bbfe00add8",
       "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
+    "lush.nvim": {
+      "rev": "9c60ec2279d62487d942ce095e49006af28eed6e",
+      "src": "https://github.com/rktjmp/lush.nvim"
+    },
     "mini.pick": {
       "rev": "8cb40ee55dd156957b1116eded6135e6aeaa078b",
       "src": "https://github.com/nvim-mini/mini.pick"
@@ -31,6 +35,18 @@
     "toggleterm.nvim": {
       "rev": "9a88eae817ef395952e08650b3283726786fb5fb",
       "src": "https://github.com/akinsho/toggleterm.nvim"
+    },
+    "transparent.nvim": {
+      "rev": "8ac59883de84e9cd1850ea25cf087031c5ba7d54",
+      "src": "https://github.com/xiyaowong/transparent.nvim"
+    },
+    "vague.nvim": {
+      "rev": "c1ab4d4891ff3a27deba6a80222d895ac8ffb2e5",
+      "src": "https://github.com/vague-theme/vague.nvim"
+    },
+    "zenbones.nvim": {
+      "rev": "4635a3f46d1066975d1074cd9f61f93cb1e32f64",
+      "src": "https://github.com/zenbones-theme/zenbones.nvim"
     }
   }
 }

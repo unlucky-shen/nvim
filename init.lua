@@ -1,3 +1,5 @@
+-- This config only works on Neovim v0.12.0++
+
 local vim = vim
 
 -- Global Variables
@@ -40,9 +42,10 @@ vim.keymap.set('n', '<leader>o', ':update<CR> :source<CR>')
 
 -- Add Plugins
 vim.pack.add({
-	{ src = 'https://github.com/sainnhe/gruvbox-material' },
+	{ src = 'https://github.com/zenbones-theme/zenbones.nvim' },
+	{ src = 'https://github.com/xiyaowong/transparent.nvim' },
+	{ src = 'https://github.com/rktjmp/lush.nvim' },
 	{ src = 'https://github.com/nvim-tree/nvim-web-devicons' },
-	{ src = 'https://github.com/nvim-lualine/lualine.nvim' },
 	{ src = 'https://github.com/nvim-mini/mini.pick' },
 	{ src = 'https://github.com/akinsho/toggleterm.nvim' },
 	{ src = 'https://github.com/windwp/nvim-autopairs' },
@@ -51,14 +54,19 @@ vim.pack.add({
 })
 
 -- Colorscheme
-vim.opt.background = 'dark'
-vim.g.gruvbox_material_background = 'hard'
-vim.g.gruvbox_material_foreground = 'material'
-vim.g.gruvbox_material_transparent_background = '2'
-vim.cmd('colorscheme gruvbox-material')
+-- vim.opt.background = 'dark'
+-- vim.g.gruvbox_material_background = 'hard'
+-- vim.g.gruvbox_material_foreground = 'material'
+-- vim.g.gruvbox_material_transparent_background = '2'
+-- vim.cmd('colorscheme gruvbox-material')
 
--- Lualine
-require 'lualine'.setup()
+vim.g.italic_comments = true
+vim.g.zenbones_darken_comments = 45
+vim.g.transparent_background = true
+vim.cmd('colorscheme zenbones')
+
+-- transparent.nvim
+require 'transparent'.setup({})
 
 -- Mini.pick
 require 'mini.pick'.setup()
