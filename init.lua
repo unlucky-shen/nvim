@@ -54,12 +54,6 @@ vim.pack.add({
 })
 
 -- Colorscheme
--- vim.opt.background = 'dark'
--- vim.g.gruvbox_material_background = 'hard'
--- vim.g.gruvbox_material_foreground = 'material'
--- vim.g.gruvbox_material_transparent_background = '2'
--- vim.cmd('colorscheme gruvbox-material')
-
 vim.g.italic_comments = true
 vim.g.zenbones_darken_comments = 45
 vim.g.transparent_background = true
