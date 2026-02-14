@@ -42,7 +42,7 @@ vim.keymap.set('n', '<leader>o', ':update<CR> :source<CR>')
 
 -- Add Plugins
 vim.pack.add({
-	{ src = 'https://github.com/zenbones-theme/zenbones.nvim' },
+	{ src = 'https://github.com/vague-theme/vague.nvim' },
 	{ src = 'https://github.com/xiyaowong/transparent.nvim' },
 	{ src = 'https://github.com/rktjmp/lush.nvim' },
 	{ src = 'https://github.com/nvim-tree/nvim-web-devicons' },
@@ -54,10 +54,8 @@ vim.pack.add({
 })
 
 -- Colorscheme
-vim.g.italic_comments = true
-vim.g.zenbones_darken_comments = 45
-vim.g.transparent_background = true
-vim.cmd('colorscheme zenbones')
+require 'vague'.setup({})
+vim.cmd("colorscheme vague")
 
 -- transparent.nvim
 require 'transparent'.setup({})
