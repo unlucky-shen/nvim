@@ -1,5 +1,4 @@
 -- This config only works on Neovim v0.12.0++
-
 local vim = vim
 
 -- Global Variables
@@ -42,7 +41,7 @@ vim.keymap.set('n', '<leader>o', ':update<CR> :source<CR>')
 
 -- Add Plugins
 vim.pack.add({
-	{ src = 'https://github.com/vague-theme/vague.nvim' },
+	{ src = 'https://github.com/sainnhe/gruvbox-material' },
 	{ src = 'https://github.com/xiyaowong/transparent.nvim' },
 	{ src = 'https://github.com/rktjmp/lush.nvim' },
 	{ src = 'https://github.com/nvim-tree/nvim-web-devicons' },
@@ -54,8 +53,13 @@ vim.pack.add({
 })
 
 -- Colorscheme
-require 'vague'.setup({})
-vim.cmd("colorscheme vague")
+vim.g.gruvbox_material_foreground = 'mix'
+vim.g.gruvbox_material_background = 'hard'
+vim.g.gruvbox_material_ui_contrast = 'high'
+vim.g.gruvbox_material_float_style = 'bright'
+vim.g.gruvbox_material_statusline_style = 'mix'
+vim.g.gruvbox_material_cursor = 'auto'
+vim.cmd("colorscheme gruvbox-material")
 
 -- transparent.nvim
 require 'transparent'.setup({})
@@ -72,7 +76,7 @@ require 'toggleterm'.setup({
 	terminal_mappings = true,
 	persist_mode = true,
 	open_mapping = [[<leader><leader>]],
-	shell = 'powershell', -- remove this line in linux
+	shell = 'powershell', -- Change accordingly
 	direction = 'float',
 	float_opts = {
 		border = 'curved',
