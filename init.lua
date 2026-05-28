@@ -41,8 +41,7 @@ vim.keymap.set('n', '<leader>o', ':update<CR> :source<CR>')
 
 -- Add Plugins
 vim.pack.add({
-	{ src = 'https://github.com/sainnhe/gruvbox-material' },
-	{ src = 'https://github.com/xiyaowong/transparent.nvim' },
+	{ src = 'https://github.com/ember-theme/nvim' },
 	{ src = 'https://github.com/rktjmp/lush.nvim' },
 	{ src = 'https://github.com/nvim-tree/nvim-web-devicons' },
 	{ src = 'https://github.com/nvim-mini/mini.pick' },
@@ -53,16 +52,7 @@ vim.pack.add({
 })
 
 -- Colorscheme
-vim.g.gruvbox_material_foreground = 'mix'
-vim.g.gruvbox_material_background = 'hard'
-vim.g.gruvbox_material_ui_contrast = 'high'
-vim.g.gruvbox_material_float_style = 'bright'
-vim.g.gruvbox_material_statusline_style = 'mix'
-vim.g.gruvbox_material_cursor = 'auto'
-vim.cmd("colorscheme gruvbox-material")
-
--- transparent.nvim
-require 'transparent'.setup({})
+vim.cmd.colorscheme('ember')
 
 -- Mini.pick
 require 'mini.pick'.setup()
